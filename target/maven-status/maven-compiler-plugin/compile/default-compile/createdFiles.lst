@@ -1,1 +1,2 @@
-com\adpguima\web\controllers\CustomerController.class
+com\adpguima\web\admin\controllers\AdminController.class
+com\adpguima\web\customer\controllers\CustomerController.class
