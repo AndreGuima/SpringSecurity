@@ -16,9 +16,9 @@ public class CustomerController {
 	CustomerService customerService;
 
 	@ResponseBody
-	@RequestMapping(value = { "/", "/customer" })
+	@RequestMapping(value = { "/", "/welcome" })
 	public String home() {
-		return "Welcome Customer!";
+		return "Welcome home";
 	}
 
 	@RequestMapping("/welcome/{userId}")

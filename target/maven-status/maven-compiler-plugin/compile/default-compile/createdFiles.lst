@@ -1,2 +1,8 @@
+com\adpguima\web\core\service\CustomerService.class
+com\adpguima\web\config\CustomerWebContextConfig.class
+com\adpguima\web\config\RootContextConfig.class
+com\adpguima\web\core\service\CustomerServiceImpl.class
+com\adpguima\web\servlet\WebExAppInitializer.class
+com\adpguima\web\config\AdminWebContextConfig.class
 com\adpguima\web\admin\controllers\AdminController.class
 com\adpguima\web\customer\controllers\CustomerController.class

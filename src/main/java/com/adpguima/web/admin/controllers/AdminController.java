@@ -18,7 +18,7 @@ public class AdminController {
 	@ResponseBody
 	@RequestMapping(value = { "/", "/admin" })
 	public String home() {
-		return "Welcome Admin!";
+		return "Welcome admin";
 	}
 
 	@RequestMapping("/welcome/{userId}")
