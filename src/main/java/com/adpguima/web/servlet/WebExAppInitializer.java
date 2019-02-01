@@ -20,16 +20,14 @@ public class WebExAppInitializer implements WebApplicationInitializer {
 		AnnotationConfigWebApplicationContext dispatcherWebContext = new AnnotationConfigWebApplicationContext();
 		dispatcherWebContext.register(CustomerWebContextConfig.class);
 
-		ServletRegistration.Dynamic dispatcherRegistration = servletContext.addServlet("dispatcher",
-				new DispatcherServlet(dispatcherWebContext));
+		ServletRegistration.Dynamic dispatcherRegistration = servletContext.addServlet("dispatcher", new DispatcherServlet(dispatcherWebContext));
 		dispatcherRegistration.setLoadOnStartup(1);
 		dispatcherRegistration.addMapping("/");
 
 		AnnotationConfigWebApplicationContext adminWebContext = new AnnotationConfigWebApplicationContext();
 		adminWebContext.register(AdminWebContextConfig.class);
 
-		ServletRegistration.Dynamic adminRegistration = servletContext.addServlet("admin_dispatcher",
-				new DispatcherServlet(adminWebContext));
+		ServletRegistration.Dynamic adminRegistration = servletContext.addServlet("admin_dispatcher", new DispatcherServlet(adminWebContext));
 		adminRegistration.setLoadOnStartup(1);
 		adminRegistration.addMapping("/admin/*");
 
